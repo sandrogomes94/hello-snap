@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "description": "An example Snap written in Javascript.",
-  "proposedName": "Javascript Example Snap",
+  "proposedName": "@sandrogomes94/hello-snap",
   "repository": {
     "type": "git",
     "url": "https://github.com/sandrogomes94/hello-snap.git"
@@ -12,7 +12,7 @@
       "npm": {
         "filePath": "dist/bundle.js",
         "iconPath": "images/icon.svg",
-        "packageName": "hello-snap",
+        "packageName": "@sandrogomes94/hello-snap",
         "registry": "https://registry.npmjs.org/"
       }
     }
