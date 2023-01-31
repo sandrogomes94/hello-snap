@@ -1,0 +1,24 @@
+{
+  "version": "0.1.0",
+  "description": "An example Snap written in Javascript.",
+  "proposedName": "Javascript Example Snap",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sandrogomes94/hello-snap.git"
+  },
+  "source": {
+    "shasum": "uuLm9JMap4w+MxeN7Buj/5Oaxo51o4CFZPPqni1DE78=",
+    "location": {
+      "npm": {
+        "filePath": "dist/bundle.js",
+        "iconPath": "images/icon.svg",
+        "packageName": "hello-snap",
+        "registry": "https://registry.npmjs.org/"
+      }
+    }
+  },
+  "initialPermissions": {
+    "snap_confirm": {}
+  },
+  "manifestVersion": "0.1"
+}
