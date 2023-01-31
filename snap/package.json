@@ -5,7 +5,7 @@
   "description": "The 'Hello, world!' of MetaMask Snaps, written in Javacript.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sandrogomes94/hello-snap.git"
+    "url": "git+https://github.com/sandrogomes94/hello-snap.git"
   },
   "license": "(MIT-0 OR Apache-2.0)",
   "main": "src/index.js",
@@ -16,28 +16,18 @@
   ],
   "scripts": {
     "build": "mm-snap build && mm-snap manifest --fix",
-    "lint": "yarn lint:eslint && yarn lint:misc --check",
+    "lint": "yarn lint:fix && yarn lint:eslint && yarn lint:misc --check",
     "lint:eslint": "eslint . --cache --ext js",
     "lint:fix": "yarn lint:eslint --fix && yarn lint:misc --write",
     "lint:misc": "prettier **/*.json --ignore-path .gitignore",
-    "serve": "mm-snap serve",
-    "start": "mm-snap watch"
+    "start": "mm-snap watch -p 9000"
   },
   "devDependencies": {
-    "@metamask/auto-changelog": "^2.6.0",
-    "@metamask/eslint-config": "^10.0.0",
-    "@metamask/eslint-config-jest": "^10.0.0",
-    "@metamask/eslint-config-nodejs": "^10.0.0",
     "@metamask/snaps-cli": "^0.22.0",
     "eslint": "^8.21.0",
     "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jest": "^26.8.2",
-    "eslint-plugin-jsdoc": "^39.2.9",
-    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.2.1",
-    "prettier-plugin-packagejson": "^2.2.11"
+    "prettier": "^2.2.1"
   },
   "packageManager": "yarn@3.2.1",
   "engines": {
@@ -46,5 +36,11 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/sandrogomes94/hello-snap/issues"
+  },
+  "homepage": "https://github.com/sandrogomes94/hello-snap#readme",
+  "keywords": [],
+  "author": ""
 }

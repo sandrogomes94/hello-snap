@@ -1,0 +1,17 @@
+{
+  "name": "hello-snap",
+  "version": "1.0.0",
+  "repository": "git@github.com:sandrogomes94/hello-snap.git",
+  "author": "Sandro Gomes <sandrogomes94@protonmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "install": "cd site && yarn && cd ../snap && yarn",
+    "build:site": "cd site && yarn build",
+    "start:site": "cd site && yarn dev",
+    "preview:site": "cd site && yarn preview",
+    "build:snap": "cd snap && yarn build",
+    "lint:snap": "cd snap && yarn lint",
+    "start:snap": "cd snap && yarn start",
+    "start": "yarn start:site && yarn start:snap"
+  }
+}
