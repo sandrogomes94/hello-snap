@@ -20,5 +20,5 @@
   "initialPermissions": {
     "snap_confirm": {}
   },
-  "manifestVersion": "0.1"
+  "manifestVersion": "0.1.0"
 }
